@@ -1,0 +1,37 @@
+
+
+forum_user:
+    resource: "@ForumForumBundle/Controller/"
+    type:     annotation
+
+
+
+forum_forum:
+    resource: "@ForumUserBundle/Controller/"
+    type:     annotation
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
+
+fos_oauth_server_token:
+    resource: "@FOSOAuthServerBundle/Resources/config/routing/token.xml"
+
+fos_user_security:
+   resource: "@FOSUserBundle/Resources/config/routing/security.xml"
+
+
+fos_oauth_server_authorize:
+    resource: "@FOSOAuthServerBundle/Resources/config/routing/authorize.xml"
+
+acme_api_demos:
+    type: rest
+    resource: Forum\ForumBundle\Controller\DefaultController
+
+acme_api_utilisateur:
+    type: rest
+    resource: Forum\UserBundle\Controller\UtilisateurController

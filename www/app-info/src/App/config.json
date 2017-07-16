@@ -1,0 +1,10 @@
+{
+  "environment":"dev",
+  "url":"http://localhost:88",
+  "urlPath":"/forum-app/web/app_dev.php",
+  "access_token":null,
+  "token_type":null,
+  "expires_in":null,
+  "refresh_token":null,
+  "scope":null
+}

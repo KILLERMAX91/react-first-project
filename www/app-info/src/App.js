@@ -1,22 +1,29 @@
 import React, { Component } from 'react';
+import { Router, Route, hashHistory } from 'react-router';
+import Utilisateur from './Ctrl/Utilisateur/Utilisateur.js';
+import Login from './Ctrl/Login/Login.js';
+import Index from "./Ctrl/Index/Index";
 
-import Left from './Left/Left.js';
 
 
 class App extends Component {
   render() {
-    return (
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-3">
-                <Left></Left>
-            </div>
-          </div>
 
-        </div>
+
+    return (
+        <Router history={hashHistory}>
+            <Route path="/utilisateurs" component={Utilisateur}/>
+            <Route path="/login" component={Login}/>
+            <Route path="/" component={Index}/>
+        </Router>
 
     );
   }
 }
+/*
 
+ import { Router, Route, hashHistory } from 'react-router';
+ import Utilisateur from './../Utilisateur/Utilisateur.js';
+
+ */
 export default App;

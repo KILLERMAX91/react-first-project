@@ -2,7 +2,7 @@
 
 
 
-tab=('apt-transport-https' 'ssh-client' 'build-essential' 'curl' 'ca-certificates' 'wget' 'apache' 'php' 'mysql' 'php-extension' 'nodejs' 'yarn');
+tab=('apt-transport-https' 'ssh-client' 'build-essential' 'curl' 'ca-certificates' 'wget' 'apache' 'php' 'mysql' 'php-extension' 'nodejs' 'yarn' 'composer' 'service');
 
 apt-get update -y
 
